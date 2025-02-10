@@ -14,7 +14,7 @@ interface TodoInterface {
 function App() {
 
   //States för komponenten
-  const { data : todos, error, loading, fetchData } = useGet<TodoInterface[]>("http://localhost:3000/dt210g-todolist/todolist");
+  const { data : todos, error, loading, fetchData } = useGet<TodoInterface[]>("https://dt210g-moment2-api.onrender.com/dt210g-todolist/todolist");
 
   return (
     <>

@@ -30,7 +30,7 @@ const AddTodo = ({ onTodoUpdate }: { onTodoUpdate: Function }) => {
         const newTodo = { title: trimmedTitle, description: trimmedDescription, status };
 
         try {
-            const res = await fetch("http://localhost:3000/dt210g-todolist/todolist", {
+            const res = await fetch("https://dt210g-moment2-api.onrender.com/dt210g-todolist/todolist", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

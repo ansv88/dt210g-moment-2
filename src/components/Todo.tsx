@@ -10,7 +10,7 @@ const Todo = ({ todo, onTodoUpdate }: { todo: any, onTodoUpdate: Function }) => 
         const newTodo = { ...todo, status: newStatus };
 
         try {
-            const res = await fetch("http://localhost:3000/dt210g-todolist/todolist/" + todo._id, {
+            const res = await fetch("https://dt210g-moment2-api.onrender.com/dt210g-todolist/todolist/" + todo._id, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json"
@@ -31,7 +31,7 @@ const Todo = ({ todo, onTodoUpdate }: { todo: any, onTodoUpdate: Function }) => 
 
     const deleteTodo = async () => {
         try {
-            const res = await fetch("http://localhost:3000/dt210g-todolist/todolist/" + todo._id, {
+            const res = await fetch("https://dt210g-moment2-api.onrender.com/dt210g-todolist/todolist/" + todo._id, {
                 method: "DELETE",
             });
 

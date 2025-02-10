@@ -1,0 +1,42 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* App-container*/
+  .main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #b8e8f3;
+  }
+  
+  .h1Main {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* Todo-container */
+  .todosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .infoText {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }

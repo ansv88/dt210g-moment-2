@@ -1,0 +1,63 @@
+/* Individuella todos */
+.todo {
+    flex: 1 1 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*  Ta bort-knapp  */
+.deleteBtn {
+    background-color: #c62929;
+    width: 50%;
+    margin-top: 20px;
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.deleteBtn:hover {
+    background-color: #8b0000;
+}
+
+/* För tablets: 2 kolumner */
+@media (min-width: 600px) {
+    .todo {
+        flex: 1 1 calc((90% - 10px) / 2);
+        max-width: calc((100% - 10px) / 2);
+        padding: 15px 10px;
+    }
+}
+
+/* För desktop: 3 kolumner */
+@media (min-width: 900px) {
+    .todo {
+        flex: 1 1 calc((90% - 40px) / 3);
+        max-width: calc((100% - 40px) / 3)
+      }
+}
+
+/* För större desktops: 4 kolumner */
+@media (min-width: 1200px) {
+    .todo {
+      flex: 1 1 calc((90% - 60px) / 4);
+      max-width: calc((100% - 60px) / 4);
+    }
+  }
+
